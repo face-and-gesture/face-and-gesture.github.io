@@ -1,0 +1,24 @@
+{%- assign presentation_start = t.time_start -%}
+{%- assign presentation_end = t.time_end -%}
+
+{%- if presentation_start contains ' +' -%}
+  {%- assign presentation_start_day = presentation_start | split: ' +' | last | plus: 0 -%}
+  {%- assign presentation_start = presentation_start | split: ' +' | first -%}
+{%- else -%}
+  {%- assign presentation_start_day = 0 -%}
+{%- endif -%}
+{%- if presentation_end contains ' +' -%}
+  {%- assign presentation_end_day = presentation_end | split: ' +' | last | plus: 0 -%}
+  {%- assign presentation_end = presentation_end | split: ' +' | first -%}
+{%- else -%}
+  {%- assign presentation_end_day = 0 -%}
+{%- endif -%}
+
+{%- assign presentation_start_hour = presentation_start | split: ':' | first | plus: 0 -%}
+{%- assign presentation_start_min = presentation_start | split: ':' | last | divided_by: site.conference.program.time_steps | floor | times: site.conference.program.time_steps -%}
+{%- assign presentation_end_hour = presentation_end | split: ':' | first | plus: 0 -%}
+{%- assign presentation_end_min = presentation_end | split: ':' | last | divided_by: site.conference.program.time_steps | ceil | times: site.conference.program.time_steps -%}
+
+{%- assign presentation_start_hour_24h = presentation_start_day | times: 24 | plus: presentation_start_hour -%}
+{%- assign presentation_end_hour_24h = presentation_end_day | times: 24 | plus: presentation_end_hour -%}
+{%- assign presentation_duration_min = presentation_end_hour_24h | minus: presentation_start_hour_24h | times: 60 | minus: presentation_start_min | plus: presentation_end_min -%}

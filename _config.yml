@@ -1,0 +1,279 @@
+title: International Conference on Automatic Face and Gesture Recognition 2023
+short_title: FG 2023
+preposition: at
+description: >-
+  Privacy and Ethics of FG Research
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://hal.cse.msu.edu" # the base hostname & protocol for your site, e.g. https://example.com
+
+plugins:
+  - jekyll-leaflet
+
+# Language
+lang: en
+
+# Show theme errors:
+show_errors: False
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - .github/
+  - venv/
+  - README.md
+  - LICENSE.md
+  - REDISTRIBUTED.md
+  - screenshot.png
+  - jekyll-theme-conference.gemspec
+  - purgecss.config.js
+  - _config.example.yml
+
+# Collections and their defaults
+collections_dir: my_collections
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:title/
+  papers:
+    output: true
+    permalink: /:collection/:title/
+  talks:
+    output: true
+    permalink: /:collection/:title/
+  team:
+    output: true
+    permalink: /:collection/:title/
+  misc:
+    output: true
+    permalink: /:collection/:title/
+  # conference stuff
+  presentations:
+    output: true
+    permalink: /:collection/:title/
+  speakers:
+    output: true
+    permalink: /:collection/:title/
+  rooms:
+    output: true
+    permalink: /:collection/:title/
+  organizers:
+    output: true
+    permalink: /:collection/:title/
+
+
+defaults:
+  # conference stuff
+  - scope:
+      path: ""
+      type: dates
+    values:
+      layout: dates
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: organizers
+    values:
+      layout: organizer
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+carousels:
+  - images:
+    - image: /assets/images/slider/image3.jpeg
+    - image: /assets/images/slider/image4.jpeg
+    - image: /assets/images/slider/image5.jpeg
+    - image: /assets/images/slider/image1.jpeg
+    - image: /assets/images/slider/image2.jpeg
+
+# Theme default values
+conference:
+  lang: en
+  show_errors: False
+
+  # Navigation bar
+  navigation:
+    logo:
+      name: IEEE
+      # img: 'CSLogo-200x70.png'
+      # img: 'csociety_logo.png'
+      # img: face-gesture.png
+      img: fg-logo.png
+      # url: ''
+    links:
+      # - name: Program
+      #   relative_url: /program/
+      - name: Dates
+        relative_url: /dates/
+      - name: Participate
+        relative_url: /participate/
+      - name: Organizers
+        relative_url: /organizers/
+      # - name: Presentations
+      #   relative_url: /presentations/
+      # - name: Speakers
+      #   relative_url: /speakers/
+      # - name: Awards
+      #   relative_url: /awards/
+      - name: Venue
+        relative_url: /venue/
+      - name: Registration
+        relative_url: /registration/
+      # menu:
+      #     - name: Paper Submission
+      #       relative_url: /participate/submission/
+      #     # - name: Workshop
+      #     #   relative_url: /participate/workshop/
+      #     # - name: Special Session
+      #     #   relative_url: /participate/special-session/
+      #     - name: Competetions
+      #       relative_url: /participate/competition/
+      #     # - name: Hackathons
+      #     #   relative_url: /participate/hackathon/
+      #     - name: Doctoral Consortium
+      #       relative_url: /participate/doctoral-consortium/
+      #     - name: Demo and Exhibition
+      #       relative_url: /participate/demo-exhibition/
+      #     # - name: Camera Ready Instructions
+      #     #   relative_url: /participate/camera-ready-instructions/
+
+  # Link Preview for Sharing
+  link_preview:
+    # also adapt "preposition" property at top for more meaningful descriptions
+    disable: false
+    img:
+      twitter: 'twitter_preview.png'      # inside /assets/images/
+      open_graph: 'facebook_preview.png'  # inside /assets/images/
+
+  # Main landing page
+  main:
+    # logo:
+    #   img: ''
+    links:
+      - name: Call for Papers
+        relative_url: /participate/
+      - name: Program
+        disabled: true
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /venue/
+      - name: Registration
+        disabled: true
+        absolute_url: ''
+
+  # Information boxes
+  # info_bars:
+  #   - title: Welcome to the Conference Theme for Jekyll!
+  #     color: primary
+  #     main_only: true
+  #     text: |
+  #       The Theme was originally made for the [Winterkongress](https://www.digitale-gesellschaft.ch/kongress/), a yearly conference of the [Digital Society Switzerland](https://digitale-gesellschaft.ch/).
+
+  #       ---
+
+  #       See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
+  #   - text: This is just some random content for demonstration purposes.
+  #     color: warning
+  #     pages_only: true
+
+  # Live indications
+  live:
+    date: 01.01.2020
+    timezone: GMT+1
+    stop:       240  # in minutes
+    streaming:
+      enable: true
+      pause:     60  # in minutes
+      prepend:    5  # in minutes
+      extend:     5  # in minutes
+    demo:
+      enable: false
+      duration: 300  # in seconds
+      pause:     10  # in seconds
+
+  # map:
+  #   # Initial map center point
+  #   home_coord: 19.922436, -155.871220
+  #   # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+  #   # The following do match the Bootstrap design not too badly:
+  #   #   - Hydda.Full
+  #   #   - Thunderforest.Neighbourhood
+  #   #   - Esri.WorldTopoMap
+  #   map_provider: "OpenStreetMap.Mapnik"
+  #   default_zoom: 17
+
+  map:
+    # Initial map center point
+    geojson: '{ "center" : [-155.871220, 19.922436],
+                 "zoom" : 10,
+                 "providerBasemap": "OpenTopoMap" }'
+    centera: 19.922436
+    centerb: -155.871220
+    # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+    # The following do match the Bootstrap design not too badly:
+    #   - Hydda.Full
+    #   - Thunderforest.Neighbourhood
+    #   - Esri.WorldTopoMap
+    providerBasemap: "OpenStreetMap"
+    zoom: 10
+
+  presentations:
+    # Talk categories
+    main_categories:
+      - name: Cat A
+        color: info
+      - name: Cat B
+        color: success
+
+    # Hide icons on talk overview page
+    hide_icons: false
+
+  speakers:
+    # Show first and last name
+    show_firstname: true
+  organizers:
+    # Show first and last name
+    show_firstname: true
+
+  location:
+    # Disable links to locations
+    hide: true
+    # URL of location / room overview page
+    url: '/location'
+    # Main page title shown on location/room navigation bar
+    navbar_title: 'Location'
+    # Show map on location main page
+    map: true
+    geojson: '{
+        "type": "Feature",
+        "properties": {"popupContent": "Waikoloa Beach Marriott Resort, Hawaii, USA"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-155.871220, 19.922436]
+        }
+    }'
+
+  program:
+    # URL of program page
+    url: '/program'
+
+    # Time steps in program table
+    time_steps: 15 # in minutes
+
+    # Show intermediary time steps (next to full hours)
+    show_alltimes: true
