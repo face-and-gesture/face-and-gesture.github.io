@@ -1,3 +1,35 @@
----
-layout: data
----
+{
+    "days": [
+        {
+            "name": "Tuesday",
+            "hash": "tu",
+            "date": "2022-03-29"
+        },
+        {
+            "name": "Wednesday",
+            "hash": "wed",
+            "date": "2022-03-30"
+        }
+    ],
+
+    "rooms": {
+    },
+
+    "speakers": {
+        "Jane Doe" : {
+            "name": "Jane Doe",
+            "href": "/speakers/person-a/"
+        },
+        "Alex Rosales" : {
+            "name": "Alex Rosales",
+            "href": "/speakers/person-b/"
+        },
+        "The Anonymous" : {
+            "name": "The Anonymous",
+            "href": ""
+        }
+    },
+
+    "presentations": {
+    }
+}

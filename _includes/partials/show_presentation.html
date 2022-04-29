@@ -1,5 +1,0 @@
-{%- if presentation.hide -%}
-  {{ presentation.name }}
-{%- else -%}
-  <a class="text-reset" href="{{ presentation.url | prepend: site.baseurl }}">{{ presentation.name }}</a>
-{%- endif -%}
