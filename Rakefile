@@ -23,7 +23,7 @@ namespace :site do
       Dir.chdir TMP
       File.open(".nojekyll", "wb") { |f| f.puts("Locally generated site.") }
 
-      system "git pull"
+      # system "git pull"
       system "git add ."
       message = "Site updated on #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
