@@ -9,18 +9,18 @@
   <meta name="description" content="" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:image" content="http://localhost:4000/assets/images/twitter_preview.png" />
+  <meta name="twitter:image" content="face-and-gesture.github.io/assets/images/twitter_preview.png" />
   <meta name="twitter:title" content="Rooms" />
   <meta name="twitter:description" content="" />
 
   <meta property="og:site_name" content="" />
-  <meta property="og:image" content="http://localhost:4000/assets/images/facebook_preview.png" />
-  <meta property="og:url" content="http://localhost:4000/venue/" />
+  <meta property="og:image" content="face-and-gesture.github.io/assets/images/facebook_preview.png" />
+  <meta property="og:url" content="face-and-gesture.github.io/venue/" />
   <meta property="og:title" content="Rooms" />
   <meta property="og:description" content="" />
   <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="/assets/css/main.css?t=1651223276" />
+  <link rel="stylesheet" href="/assets/css/main.css?t=1655430060" />
 
   <link rel="preload" as="font" href="/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" as="font" href="/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
@@ -53,6 +53,10 @@
                 Organizers
               </a>
             </li>
+            <li class="nav-item "><a class="nav-link" href="/sponsorship/" title="Sponsorship">
+                Sponsorship
+              </a>
+            </li>
             <li class="nav-item active"><a class="nav-link" href="/venue/" title="Venue">
                 Venue
               </a>
@@ -77,6 +81,18 @@
         </h1>
       </div></header>
   <main class="container">
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+
+        <h2 id="latest-updates">Latest Updates</h2>
+<p>Calls for workshop, tutorial and competetion proposals are now up. Please check out the <a href="https://hal.cse.msu.edu/fg2023/participate/">participate</a> page</p>
+
+<p>Call for <a href="https://hal.cse.msu.edu/fg2023/sponsorship/">sponsorships</a> is now up.</p>
+
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
   
 
@@ -95,7 +111,7 @@
 
   
     <!-- <div id="map" class="mt-4 mb-3"></div> -->
-    <div id="leaflet-map-8be7fc90f268fe850b3971d9b87b78e0" class="leaflet-map"></div>
+    <div id="leaflet-map-529c4679abbabc006188a7e3cfc4d032" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -105,14 +121,14 @@
     var tagInputArg = {"zoom" : 10,"center" : [19.922436, -155.871220], "providerBasemap": "OpenStreetMap"} ;
     var blockLeafletItems = [
       
-        {id: "fcfb6caf5019ebd5c5a0971b6ca617ec",
+        {id: "5a3bb38ba390477212bfc3301e0f2e0e",
               type: "LeafletGeoJSON",
               value: { "type": "Feature", "properties": {"popupContent": "Waikoloa Beach Marriott Resort, Hawaii, USA"}, "geometry": { "type": "Point", "coordinates": [-155.871220, 19.922436] } } },
       
     ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-8be7fc90f268fe850b3971d9b87b78e0";
+    var defaultMapElId = "leaflet-map-529c4679abbabc006188a7e3cfc4d032";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -245,7 +261,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 8be7fc90f268fe850b3971d9b87b78e0 with these args:");
+        console.log("Creating map 529c4679abbabc006188a7e3cfc4d032 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1222,7 +1238,7 @@
   </div>
 </div>
 <!-- Append build time to avoid caching of live program embedded in JavaScript file -->
-  <script src="/assets/js/main.js?t=1651223276"></script>
+  <script src="/assets/js/main.js?t=1655430060"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49985752-2"></script>

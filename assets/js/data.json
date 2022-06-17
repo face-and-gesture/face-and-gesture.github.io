@@ -1,14 +1,9 @@
 {
     "days": [
         {
-            "name": "Tuesday",
-            "hash": "tu",
-            "date": "2022-03-29"
-        },
-        {
-            "name": "Wednesday",
-            "hash": "wed",
-            "date": "2022-03-30"
+            "name": "Monday",
+            "hash": "mo",
+            "date": "2020-01-31"
         }
     ],
 
