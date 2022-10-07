@@ -20,7 +20,7 @@
   <meta property="og:description" content="" />
   <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="/assets/css/main.css?t=1664716847" />
+  <link rel="stylesheet" href="/assets/css/main.css?t=1665160471" />
 
   <link rel="preload" as="font" href="/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" as="font" href="/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
@@ -92,7 +92,7 @@
         <h2 id="latest-updates">Latest Updates</h2>
 <p>Call for demos is now up. Please check out the <a href="/participate/demo">demo</a> page.</p>
 
-<p>Hotel registration is now open. Please check out the <a href="/venue">venue</a> page.</p>
+<p><a href="/venue">Hotel</a> and <a href="/registration">Conference</a> registration are now open.</p>
 
 <p>Submissions to the <a href="/participate/doctoral-consortium">Doctoral Consortium</a> are open until 15th October 2022.</p>
 
@@ -118,7 +118,7 @@
 
   
     <!-- <div id="map" class="mt-4 mb-3"></div> -->
-    <div id="leaflet-map-c89a91178c8e52f9624239dff7789595" class="leaflet-map"></div>
+    <div id="leaflet-map-7d2d9d991eb2adb3246f6f265b2a51b9" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -128,14 +128,14 @@
     var tagInputArg = {"zoom" : 10,"center" : [19.922436, -155.871220], "providerBasemap": "OpenStreetMap"} ;
     var blockLeafletItems = [
       
-        {id: "f1caed782b8fc28ccd458f82689ca20b",
+        {id: "4c6a634976f1006430c95775ae927227",
               type: "LeafletGeoJSON",
               value: { "type": "Feature", "properties": {"popupContent": "Waikoloa Beach Marriott Resort, Hawaii, USA"}, "geometry": { "type": "Point", "coordinates": [-155.871220, 19.922436] } } },
       
     ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-c89a91178c8e52f9624239dff7789595";
+    var defaultMapElId = "leaflet-map-7d2d9d991eb2adb3246f6f265b2a51b9";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -268,7 +268,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map c89a91178c8e52f9624239dff7789595 with these args:");
+        console.log("Creating map 7d2d9d991eb2adb3246f6f265b2a51b9 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1174,7 +1174,7 @@
 
   <p>FG 2023 will be co-located with WACV 2023 at the Waikoloa Beach Marriott Resort, 69-275 Waikoloa Beach Drive, Waikoloa, Hawaii, USA.</p>
 
-<p><a href="https://book.passkey.com/go/IEEEWACV2023">Reservations are open now.</a></p>
+<p><a href="https://book.passkey.com/go/IEEEWACV2023">Reservations are open now.</a> (More hotels choices are <a href="#additional-hotels">below</a>)</p>
 
 <p><strong>Rates are as follows:</strong></p>
 
@@ -1243,17 +1243,23 @@ The cancellation date for your hotel reservation is November 28th, 2022. On Nove
 Waikoloa, HI 96738<br />
 Phone: +1 808-886-0762
 </address>
-
 <p><a href="http://link.hertz.com/link.html?id=19610&amp;LinkType=HZLK&amp;TargetType=Homepage">Hertz</a></p>
+
 <address>
 62-100 Mauna Kea Beach Drive<br />
 Kohala-Hapuna, HI 96743<br />
 Phone: +1 808-882-5707
 </address>
-
 <p><strong>Bus Station</strong></p>
 
 <p><a href="http://www.heleonbus.org/">Hele-On Bus</a></p>
+
+<h5 id="additional-hotels">Additional Hotels</h5>
+
+<ol>
+  <li>We have a block of rooms at the <a href="https://www.marriott.com/hotels/hotel-deals/koacy-courtyard-king-kamehamehas-kona-beach-hotel/">Courtyard Marriott</a> as well. The rate is $289 USD per night. Last day yo book is <strong>5th December, 2022</strong></li>
+  <li><a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1664330655673&amp;key=GRP&amp;app=resvlink">Courtyard King Kamehameha’s Kona Beach Hotel</a>. The rate is $289 USD per night  <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1664330655673&amp;key=GRP&amp;app=resvlink">Book your group rate for Institute of Electrical and Electronics Engineers Inc</a></li>
+</ol>
 
 
 
@@ -1329,7 +1335,7 @@ Phone: +1 808-882-5707
   </div>
 </div>
 <!-- Append build time to avoid caching of live program embedded in JavaScript file -->
-  <script src="/assets/js/main.js?t=1664716847"></script>
+  <script src="/assets/js/main.js?t=1665160471"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49985752-2"></script>
