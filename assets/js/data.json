@@ -11,18 +11,6 @@
     },
 
     "speakers": {
-        "Jane Doe" : {
-            "name": "Jane Doe",
-            "href": "/speakers/person-a/"
-        },
-        "Alex Rosales" : {
-            "name": "Alex Rosales",
-            "href": "/speakers/person-b/"
-        },
-        "The Anonymous" : {
-            "name": "The Anonymous",
-            "href": ""
-        }
     },
 
     "presentations": {
