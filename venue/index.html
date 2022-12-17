@@ -20,7 +20,7 @@
   <meta property="og:description" content="" />
   <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="/assets/css/main.css?t=1669824446" />
+  <link rel="stylesheet" href="/assets/css/main.css?t=1671291419" />
 
   <link rel="preload" as="font" href="/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" as="font" href="/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
@@ -124,7 +124,7 @@
 
   
     <!-- <div id="map" class="mt-4 mb-3"></div> -->
-    <div id="leaflet-map-14708451d2a6cdc5f5d2c3a355ee4454" class="leaflet-map"></div>
+    <div id="leaflet-map-2e5676a4dbb097b8ddd8f0df30408322" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -134,14 +134,14 @@
     var tagInputArg = {"zoom" : 10,"center" : [19.922436, -155.871220], "providerBasemap": "OpenStreetMap"} ;
     var blockLeafletItems = [
       
-        {id: "e14b3b930f2e4103f050d76e4f66550c",
+        {id: "5d1a3b8059b0c24f67a3077a074f97da",
               type: "LeafletGeoJSON",
               value: { "type": "Feature", "properties": {"popupContent": "Waikoloa Beach Marriott Resort, Hawaii, USA"}, "geometry": { "type": "Point", "coordinates": [-155.871220, 19.922436] } } },
       
     ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-14708451d2a6cdc5f5d2c3a355ee4454";
+    var defaultMapElId = "leaflet-map-2e5676a4dbb097b8ddd8f0df30408322";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -274,7 +274,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 14708451d2a6cdc5f5d2c3a355ee4454 with these args:");
+        console.log("Creating map 2e5676a4dbb097b8ddd8f0df30408322 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1315,7 +1315,7 @@ Phone: +1 808-882-5707
         <div class="my-0 small align-self-start live-time" id="stream-info-time" data-time=""></div>
         <div class="pl-2 align-self-start" id="stream-info-color">
           <p class="mb-0">
-            <a class="text-reset" href="#" id="stream-info-presentation"></a>
+            <a class="text-reset" href="#" id="stream-info-talk"></a>
           </p>
           <p class="font-weight-light mb-0" id="stream-info-speakers"></p>
         </div>
@@ -1323,16 +1323,18 @@ Phone: +1 808-882-5707
       </div>
 
       <div class="modal-footer justify-content-around">
-        <a id="stream-button1" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room A">
-            Room A
-          </a><a id="stream-button2" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room B">
-            Room B
-          </a><a id="stream-button3" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Room C">
-            Room C
+        <a id="stream-button1" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Paniolo I">
+            Paniolo I
+          </a><a id="stream-button2" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Paniolo II">
+            Paniolo II
+          </a><a id="stream-button3" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Paniolo III">
+            Paniolo III
+          </a><a id="stream-button4" href="#" class="btn btn-outline-primary d-none d-sm-inline disabled" role="button" data-room="Virtual">
+            Virtual
           </a>
         <div class="form-group w-100 d-block d-sm-none">
           <select class="form-control" id="stream-select">
-            <option value="1" disabled>Room A</option><option value="2" disabled>Room B</option><option value="3" disabled>Room C</option>
+            <option value="1" disabled>Paniolo I</option><option value="2" disabled>Paniolo II</option><option value="3" disabled>Paniolo III</option><option value="4" disabled>Virtual</option>
           </select>
         </div>
       </div>
@@ -1341,7 +1343,7 @@ Phone: +1 808-882-5707
   </div>
 </div>
 <!-- Append build time to avoid caching of live program embedded in JavaScript file -->
-  <script src="/assets/js/main.js?t=1669824446"></script>
+  <script src="/assets/js/main.js?t=1671291419"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49985752-2"></script>

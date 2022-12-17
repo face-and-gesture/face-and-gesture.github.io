@@ -1,9 +1,24 @@
 {
     "days": [
         {
-            "name": "Monday",
-            "hash": "mo",
-            "date": "2020-01-31"
+            "name": "Thursday",
+            "hash": "thu",
+            "date": "2023-01-05"
+        },
+        {
+            "name": "Friday",
+            "hash": "fri",
+            "date": "2023-01-06"
+        },
+        {
+            "name": "Saturday",
+            "hash": "sat",
+            "date": "2023-01-07"
+        },
+        {
+            "name": "Sunday",
+            "hash": "sun",
+            "date": "2023-01-08"
         }
     ],
 
@@ -11,8 +26,24 @@
     },
 
     "speakers": {
+        "Jim DiCarlo" : {
+            "name": "Jim DiCarlo",
+            "href": "/speakers/jim-dicarlo/"
+        },
+        "Massimo Tistarelli" : {
+            "name": "Massimo Tistarelli",
+            "href": "/speakers/massimo-tistarelli/"
+        },
+        "Matthew Turk" : {
+            "name": "Matthew Turk",
+            "href": "/speakers/matthew-turk/"
+        },
+        "Yaser Sheikh" : {
+            "name": "Yaser Sheikh",
+            "href": "/speakers/yaser-sheikh/"
+        }
     },
 
-    "presentations": {
+    "talks": {
     }
 }
